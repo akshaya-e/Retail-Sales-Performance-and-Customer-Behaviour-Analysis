@@ -6,7 +6,7 @@ An interactive Power BI report that helps management see top-performing
 products, profitable regions, customer segments, monthly sales trends, and
 sales against target.
 
-LIVE PREVIEW:[Sales Dashboard Preview](dashboard.PNG)
+Live Preview [Sales Dashboard Preview](dashnoard.PNG)
 
 DATASET
 
