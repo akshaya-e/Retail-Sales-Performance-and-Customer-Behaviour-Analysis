@@ -1,6 +1,6 @@
-# RETAIL SALES PERFORMANCE AND CUSTOMER BEHAVIOUR ANALYSIS
+# Retail Sales Performance and Customer Behaviour Analysis
 
-## OVERVIEW
+## Overview
 
 An interactive Power BI report that helps management see top-performing
 products, profitable regions, customer segments, monthly sales trends, and
@@ -8,7 +8,7 @@ sales against target.
 
 Live Preview [Sales Dashboard Preview](dashboard.PNG)
 
-## DATASET
+## Dataset
 
 Public dataset of 9,994 order lines,5,009 orders,793 customers based on 2 Jan 2014 to 30 Dec 2017
 
@@ -29,9 +29,9 @@ Public dataset of 9,994 order lines,5,009 orders,793 customers based on 2 Jan 20
 5. **Visualize (Power BI):** built a main dashboard, two drill-through pages (`Product Performance`, `Customer Insight`), a quick-insight tooltip page, and dedicated question views.
 
 
-## DASHBOARD PAGES
+## Dashboard Pages
 
-## MAIN PAGE: DASHBOARD
+## Main Page: Dashboard
   - KPI cards: Total Sales, Total Profit, Profit Margin, Target Achieved %,
     Total Quantity
   - Trend of sales over time (line chart)
@@ -41,17 +41,17 @@ Public dataset of 9,994 order lines,5,009 orders,793 customers based on 2 Jan 20
   - Quantity vs Profit (scatter)
   - Order Date slicer
 
-## DRILL-THROUGH PAGES
+## Drill-Through Page
   - Product Performance (right-click a product): product name, monthly sales
     trend, total profit, quantity, region-wise sales, sales rank.
   - Customer Insight (right-click a customer): customer name, segment, region,
     total profit, profit margin, sales history, product-wise purchases.
 
-## TOOLTIP PAGE
+## Tooltip Page
   - Quick Insight Tooltip: YoY growth, product rank, contribution %,
     last purchase date, mini sales trend.
 
-## KEY RESULTS
+## Key Results
 
 Total sales      $2.30M
 Total profit     $286K
