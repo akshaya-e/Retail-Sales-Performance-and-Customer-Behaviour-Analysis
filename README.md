@@ -1,6 +1,6 @@
-RETAIL SALES PERFORMANCE AND CUSTOMER BEHAVIOUR ANALYSIS
+# **RETAIL SALES PERFORMANCE AND CUSTOMER BEHAVIOUR ANALYSIS**
 
-OVERVIEW
+# **OVERVIEW**
 
 An interactive Power BI report that helps management see top-performing
 products, profitable regions, customer segments, monthly sales trends, and
@@ -8,26 +8,32 @@ sales against target.
 
 Live Preview [Sales Dashboard Preview](dashboard.PNG)
 
-DATASET
+# **DATASET**
 
 Public dataset of 9,994 order lines,5,009 orders,793 customers based on 2 Jan 2014 to 30 Dec 2017
 
-TOOLS
-- Excel: source dataset (`Retail-Sales-Dataset.xlsx`)
-- Python (pandas, matplotlib, seaborn):exploratory analysis and chart export (`eda_analysis_1.py`)
-- Power BI (DAX): KPI cards, gauge, slicer, drill-through and tooltip pages (`Retail-sales.pbix`)
-- PowerPoint:summary presentation (`Retail_Sales_presentation.pptx`)
+**Workflow:** Excel (data prep) → Python (EDA) → MySQL (validation & analysis) → Power BI (dashboard) → PowerPoint (presentation)
 
-Methodology
-1. Prepare (Excel):loaded the full order dataset into one sheet with order, customer, location and product fields.
-2. Explore (Python):grouped sales and profit by category, month, product and customer, and plotted quantity against profit.
-3. Model (DAX): built measures for totals, profit margin, YoY and MoM growth, sales target, product rank and contribution %.
-4. Visualize (Power BI):built a main dashboard, two drill-through pages (Product Performance, Customer Insight), a tooltip page, and one page per project question.
-5. Present (PowerPoint):summarized the findings for management.
+## Tools
 
-DASHBOARD PAGES
+- **Excel:** source dataset (`Retail-Sales-Dataset.xlsx`)
+- **Python (`pandas`, `matplotlib`, `seaborn`):** exploratory analysis and chart export (`eda_analysis.py`)
+- **MySQL:** data-quality checks, aggregations, subqueries, window functions (`DENSE_RANK`, `LAG`) (`Retail sales performace.sql`)
+- **Power BI (DAX):** KPI cards, gauge, slicer, drill-through and tooltip pages (`Retail-sales.pbix`)
+- **PowerPoint:** summary presentation (`Retail_Sales_presentation.pptx`)
 
-MAIN PAGE: DASHBOARD
+## Methodology
+
+1. **Prepare (Excel):** loaded the full order dataset into one sheet with order, customer, location, and product fields.
+2. **Validate (SQL):** checked total records, table structure, duplicate `Row ID`s, missing values, and date/quantity anomalies.
+3. **Analyze (SQL):** ran `GROUP BY` aggregations, subqueries, CTEs, and window functions for regional/segment margins, product rankings, repeat customers, and YoY growth.
+4. **Explore (Python):** grouped sales and profit by category, month, product, and customer, and plotted quantity against profit.
+5. **Visualize (Power BI):** built a main dashboard, two drill-through pages (`Product Performance`, `Customer Insight`), a quick-insight tooltip page, and dedicated question views.
+
+
+# **DASHBOARD PAGES**
+
+# **MAIN PAGE: DASHBOARD**
   - KPI cards: Total Sales, Total Profit, Profit Margin, Target Achieved %,
     Total Quantity
   - Trend of sales over time (line chart)
@@ -37,17 +43,17 @@ MAIN PAGE: DASHBOARD
   - Quantity vs Profit (scatter)
   - Order Date slicer
 
-DRILL-THROUGH PAGES
+# **DRILL-THROUGH PAGES**
   - Product Performance (right-click a product): product name, monthly sales
     trend, total profit, quantity, region-wise sales, sales rank.
   - Customer Insight (right-click a customer): customer name, segment, region,
     total profit, profit margin, sales history, product-wise purchases.
 
-TOOLTIP PAGE
+# **TOOLTIP PAGE**
   - Quick Insight Tooltip: YoY growth, product rank, contribution %,
     last purchase date, mini sales trend.
 
-KEY RESULTS
+# **KEY RESULTS**
 
 Total sales      $2.30M
 Total profit     $286K
