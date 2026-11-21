@@ -14,19 +14,19 @@ Public dataset of 9,994 order lines,5,009 orders,793 customers based on 2 Jan 20
 
 ## Tools
 
-- **Excel:** source dataset (`Retail-Sales-Dataset.xlsx`)
-- **Python (`pandas`, `matplotlib`, `seaborn`):** exploratory analysis and chart export (`eda_analysis.py`)
-- **MySQL:** data-quality checks, aggregations, subqueries, window functions (`DENSE_RANK`, `LAG`) (`Retail sales performace.sql`)
-- **Power BI (DAX):** KPI cards, gauge, slicer, drill-through and tooltip pages (`Retail-sales.pbix`)
-- **PowerPoint:** summary presentation (`Retail_Sales_presentation.pptx`)
+- **Excel:** source dataset (Retail-Sales-Dataset.xlsx)
+- **Python:** (pandas, matplotlib, seaborn) exploratory analysis and chart export (eda_analysis.py)
+- **MySQL:** data-quality checks, aggregations, subqueries, window functions (Retail sales performace.sql)
+- **Power BI (DAX):** KPI cards, gauge, slicer, drill-through and tooltip pages (Retail-sales.pbix)
+- **PowerPoint:** summary presentation (Retail_Sales_presentation.pptx)
 
 ## Methodology
 
 1. **Prepare (Excel):** loaded the full order dataset into one sheet with order, customer, location, and product fields.
-2. **Validate (SQL):** checked total records, table structure, duplicate `Row ID`s, missing values, and date/quantity anomalies.
-3. **Analyze (SQL):** ran `GROUP BY` aggregations, subqueries, CTEs, and window functions for regional/segment margins, product rankings, repeat customers, and YoY growth.
+2. **Validate (SQL):** checked total records, table structure, duplicate Row ID s, missing values, and date/quantity anomalies.
+3. **Analyze (SQL):** ran GROUP BY aggregations, subqueries, CTEs, and window functions for regional/segment margins, product rankings, repeat customers, and YoY growth.
 4. **Explore (Python):** grouped sales and profit by category, month, product, and customer, and plotted quantity against profit.
-5. **Visualize (Power BI):** built a main dashboard, two drill-through pages (`Product Performance`, `Customer Insight`), a quick-insight tooltip page, and dedicated question views.
+5. **Visualize (Power BI):** built a main dashboard, two drill-through pages (Product Performance, Customer Insight), a quick-insight tooltip page, and dedicated question views.
 
 
 ## Dashboard Pages
