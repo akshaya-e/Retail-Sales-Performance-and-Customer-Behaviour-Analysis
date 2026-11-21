@@ -1,4 +1,4 @@
-RETAIL SALES PERFORMANCE AND CUSTOMER BEHAVIOUR - POWER BI DASHBOARD
+RETAIL SALES PERFORMANCE AND CUSTOMER BEHAVIOUR ANALYSIS
 
 OVERVIEW
 
@@ -10,39 +10,24 @@ Live Preview [Sales Dashboard Preview](dashboard.PNG)
 
 DATASET
 
-Table: Retails Order Full Dataset
-9,994 order lines | 5,009 orders | 793 customers | 2 Jan 2014 to 30 Dec 2017
+Public dataset of 9,994 order lines,5,009 orders,793 customers based on 2 Jan 2014 to 30 Dec 2017
 
-Order columns:     Row ID, Order ID, Order Date, Ship Date, Ship Mode, Returned
-Customer columns:  Customer ID, Customer Name, Segment
-Location columns:  Country, State, City, Postal Code, Region, Retail Sales People
-Product columns:   Product ID, Category, Sub-Category, Product Name
-Number columns:    Sales, Quantity, Discount, Profit
+TOOLS
+- Excel: source dataset (`Retail-Sales-Dataset.xlsx`)
+- Python (pandas, matplotlib, seaborn):exploratory analysis and chart export (`eda_analysis_1.py`)
+- Power BI (DAX): KPI cards, gauge, slicer, drill-through and tooltip pages (`Retail-sales.pbix`)
+- PowerPoint:summary presentation (`Retail_Sales_presentation.pptx`)
 
-Regions:     West, East, Central, South
-Categories:  Furniture, Office Supplies, Technology
-Segments:    Consumer, Corporate, Home Office
+Methodology
+1. Prepare (Excel):loaded the full order dataset into one sheet with order, customer, location and product fields.
+2. Explore (Python):grouped sales and profit by category, month, product and customer, and plotted quantity against profit.
+3. Model (DAX): built measures for totals, profit margin, YoY and MoM growth, sales target, product rank and contribution %.
+4. Visualize (Power BI):built a main dashboard, two drill-through pages (Product Performance, Customer Insight), a tooltip page, and one page per project question.
+5. Present (PowerPoint):summarized the findings for management.
 
+DASHBOARD PAGES
 
-DAX MEASURES
-
-Total Sales, Total Profit, Total Quantity   Sums of Sales, Profit and Quantity
-Profit Margin                Total Profit / Total Sales
-Previous year sales          Sales for the same period last year
-YoY Sales Growth %, YoY Sales %   Year-over-year comparison
-MoM Sales %                  Change from the previous month
-Sales Target                 Q4 2016 sales (1 Oct to 31 Dec 2016) x 1.10
-Target Achieved %            Total Sales / Sales Target
-Max Gauge, Target Value Measure   Gauge maximum (1.25) and target marker (1)
-Product Sales Rank           Dense rank of products by sales
-Contribution %               Share of total sales
-Customer Profit Margin %     Profit divided by sales per customer
-Last Purchase Date           Latest order date
-
-
-REPORT PAGES
-
-MAIN PAGE: DASHBOARD (1280 x 720)
+MAIN PAGE: DASHBOARD
   - KPI cards: Total Sales, Total Profit, Profit Margin, Target Achieved %,
     Total Quantity
   - Trend of sales over time (line chart)
@@ -62,13 +47,6 @@ TOOLTIP PAGE
   - Quick Insight Tooltip: YoY growth, product rank, contribution %,
     last purchase date, mini sales trend.
 
-QUESTION PAGES (one visual each)
-  Highest-sales region, two-year monthly trend, top 5 customers, category with
-  highest margin, quarterly target %, quantity vs profit, sales-drop month,
-  most profitable segment. There are also KPI, Top 5, Region, Target, Trend
-  and Filters pages.
-
-
 KEY RESULTS
 
 Total sales      $2.30M
@@ -77,33 +55,6 @@ Profit margin    12.5%
 Units sold       37,873
 Sales growth     2015: -2.8%   2016: +29.5%   2017: +20.4%
 
-
-ANSWERS TO THE PROJECT QUESTIONS
-
-1. Region with the highest sales
-   West: $725K (31.6% of total)
-
-2. Monthly sales trend, last two years
-   Rising: $609K (2016) to $733K (2017); peaks in November and December
-
-3. Top 5 customers by revenue
-   Sean Miller ($25.0K), Tamara Chand ($19.1K), Raymond Buch ($15.1K),
-   Tom Ashbrook ($14.6K), Adrian Barton ($14.5K)
-
-4. Category with the highest profit margin
-   Technology: 17.4% (Office Supplies 17.0%, Furniture 2.5%)
-
-5. Target achieved this quarter
-   Q4 2017: 100.2%
-
-6. Quantity vs profit correlation
-   Weak (r = 0.07); sales vs profit is r = 0.48
-
-7. Month with a significant drop
-   April 2017: -47.7% vs March (December 2017: -36.2%)
-
-8. Most profitable segment
-   Home Office: 14.0% margin (Corporate 13.0%, Consumer 11.5%)
 
 
 
