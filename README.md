@@ -1,6 +1,6 @@
-RETAIL SALES PERFORMANCE AND CUSTOMER BEHAVIOUR - POWER BI DASHBOARD
+**RETAIL SALES PERFORMANCE AND CUSTOMER BEHAVIOUR - POWER BI DASHBOARD
 
-OVERVIEW
+OVERVIEW**
 
 An interactive Power BI report that helps management see top-performing
 products, profitable regions, customer segments, monthly sales trends, and
