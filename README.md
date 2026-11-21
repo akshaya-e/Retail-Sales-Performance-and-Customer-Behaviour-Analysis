@@ -1,4 +1,4 @@
-# **RETAIL SALES PERFORMANCE AND CUSTOMER BEHAVIOUR ANALYSIS**
+# RETAIL SALES PERFORMANCE AND CUSTOMER BEHAVIOUR ANALYSIS
 
 ## OVERVIEW
 
@@ -11,8 +11,6 @@ Live Preview [Sales Dashboard Preview](dashboard.PNG)
 ## DATASET
 
 Public dataset of 9,994 order lines,5,009 orders,793 customers based on 2 Jan 2014 to 30 Dec 2017
-
-## Workflow: Excel (data prep) → Python (EDA) → MySQL (validation & analysis) → Power BI (dashboard) → PowerPoint (presentation)
 
 ## Tools
 
